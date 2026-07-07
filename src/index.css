@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+@theme {
+  /* Hooked on Phonics Brand Colors */
+  --color-brand-blue: #0066cc;
+  --color-brand-orange: #ff6b35;
+  --color-brand-yellow: #ffd700;
+  --color-brand-purple: #6b4c9a;
+
+  /* Semantic colors */
+  --color-background: #ffffff;
+  --color-foreground: #333333;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #333333;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #333333;
+
+  --color-primary: #0066cc;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #ff6b35;
+  --color-secondary-foreground: #ffffff;
+
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #666666;
+
+  --color-accent: #ffd700;
+  --color-accent-foreground: #333333;
+
+  --color-destructive: #f44336;
+  --color-destructive-foreground: #ffffff;
+
+  --color-border: #e0e0e0;
+  --color-input: #cccccc;
+  --color-ring: #0066cc;
+
+  /* Shadows */
+  --shadow-card: 0 4px 12px rgb(0 0 0 / 0.08);
+  --shadow-button: 0 2px 8px rgb(0 0 0 / 0.12);
+
+  /* Typography - matching Hooked on Phonics */
+  --font-sans: 'Quicksand', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-heading: 'Quicksand', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+
+  /* Container */
+  --container-max-width: 1200px;
+  --content-max-width: 1140px;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+/* Custom utility classes */
+.card {
+  background-color: var(--color-card);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+}
+
+.container-custom {
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
